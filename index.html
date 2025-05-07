@@ -6,259 +6,165 @@
     <title>Product</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="./styles/styles.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <img src="./images/logo.png" alt="logo">
-        <h1><a href="#">Product</a></h1>
-        <nav>
-            <ul >
-                <li>
-                    <a href="#">Product</a>
+<body class="body">
+    <header class="header">
+        <img src="./images/logo.png" alt="logo" class="header__logo">
+        <h1 class="header__name"><a href="#" class="header__link">Product</a></h1>
+        <nav class="header__navigation">
+            <ul class="header__nav">
+                <li class="header__list">
+                    <a href="#" class="header__item header__item_bold">Product</a>
                 </li>
-                <li>
-                    <a href="#">Pricing</a>
+                <li class="header__list">
+                    <a href="#" class="header__item">Pricing</a>
                 </li>
-                <li>
-                    <a href="#">Pricing</a>
+                <li class="header__list">
+                    <a href="#" class="header__item">Pricing</a>
                 </li>
-                <li>
-                    <a href="#">Resources</a>
+                <li class="header__list">
+                    <a href="#" class="header__item header__item_indent">Resources</a>
                 </li>
             </ul>
         </nav>
-        <a href="#">Sign In</a>
-        <a href="#">Sign Up</a>
-        <a href="#"><img src="./images/drk-mode-btn.png" alt="dark theme"></a>
+        <a href="#" class="header__sign-in">Sign In</a>
+        <a href="#" class="header__sign-up">Sign Up</a>
+        <a href="#" class="header__dark"><img src="./images/drk-mode-btn.png" alt="dark theme"></a>
     </header>
-    <main>
-        <div >
-            <h2>Work at the speed of thought</h2>
-            <p>Tools, tutorials, design and innovation experts, all in one place! The most 
-                intuitive way to imagine your next user experience.</p>
-            <a href="#">Get started</a>
-            <div>
-                <img src="./images/triangle.png" alt="triangle">
-                <a href="#">Watch the Video</a>
-            </div>
-        </div>
-        <img src="./images/hero-img.png" alt="social network correspondence">
-        <div>
-            <p>Product  was Built Specifically for You</p>
-            <div>
-                <div>
-                    <img src="./images/icon-1.png" alt="cursor">
-                    <p>First click tests</p>
-                    <p>While most people enjoy casino gambling,</p>
+    <main class="main">
+        <div class="banner">
+            <div class="banner__content">
+                <h2 class="banner__name">Work at the speed of thought</h2>
+                <p class="banner__text">Tools, tutorials, design and innovation experts, all in one place! The most 
+                                         intuitive way to imagine your next user experience.</p>
+                <div class="banner__info">
+                    <a href="#" class="banner__link banner__link_width">Get started</a>
+                    <div class="banner__button">
+                        <img src="./images/triangle.png" alt="triangle" class="banner__play">
+                        <a href="#" class="banner__video">Watch the Video</a>
+                    </div>
                 </div>
-                <div>
-                    <img src="./images/icon-2.png" alt="wave">
-                    <p>Design surveys</p>
-                    <p>Sports betting, lottery and bingo playing for the fun</p>
+            </div>
+            <img src="./images/hero-img.png" alt="social network correspondence" class="banner__image">
+        </div>
+        <div class="icons">
+            <p class="icons__name">Product  was Built Specifically for You</p>
+            <div class="icons__background">
+                <div class="icons__block">
+                    <div class="icons__item">   
+                        <img src="./images/icon-1.png" alt="cursor" class="icons__image">
+                        <p class="icons__title">First click tests</p>
+                        <p class="icons__text">While most people enjoy casino gambling,</p>
+                    </div>
+                    <div class="icons__item">
+                        <img src="./images/icon-2.png" alt="wave" class="icons__image">
+                        <p class="icons__title">Design surveys</p>
+                        <p class="icons__text">Sports betting, lottery and bingo playing for the fun</p>
+                    </div>
+                    <div class="icons__item">
+                        <img src="./images/icon-3.png" alt="heart" class="icons__image">
+                        <p class="icons__title">Preference tests</p>
+                        <p class="icons__text">The Myspace page defines the individual.</p>
+                    </div>
+                    <div class="icons__item">
+                        <img src="./images/icon-4.png" alt="hourglass" class="icons__image">
+                        <p class="icons__title">Five second tests</p>
+                        <p class="icons__text">Personal choices and the overall personality of the person. </p>
+                    </div>
                 </div>
-                <div>
-                    <img src="./images/icon-3.png" alt="heart">
-                    <p>Preference tests</p>
-                    <p>The Myspace page defines the individual.</p>
+            <a href="#" class="icons__link">SIGN UP NOW</a>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info__item">
+                <div class="info__textbox">
+                    <p class="info__title">Effortless Validation for</p>
+                    <p class="info__name">Management</p>
+                    <p class="info__text">The Myspace page defines the individual, his or her characteristics,
+                        traits, personal choices and the overall personality of the person. </p>
+                    <p class="info__title info__title_bottom">Accessory makers</p>
+                    <p class="info__text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+                    <p class="info__title info__title_bottom">Alterationists</p>
+                    <p class="info__text">If you are looking for a new way to promote your business that won’t cost you more money, </p>
                 </div>
-                <div>
-                    <img src="./images/icon-4.png" alt="hourglass">
-                    <p>Five second tests</p>
-                    <p>Personal choices and the overall personality of the person. </p>
+                <img src="./images/management-img.png" alt="text" class="info__image">
+            </div>
+            <div class="info__item">
+                <img src="./images/support-img.png" alt="laptop" class="info__image">
+                <div class="info__textbox">
+                    <p class="info__title">Easier decision making for</p>
+                    <p class="info__name">Customer Support</p>
+                    <p class="info__text">The Myspace page defines the individual, his or her characteristics, 
+                        traits, personal choices and the overall personality of the person. </p>
+                    <div class="info__elem">
+                        <img src="./images/icon-5.png" alt="icon" class="info__pic">
+                        <p class="info__text">Never worry about overpaying for your energy again. </p>
+                    </div>
+                    <div class="info__elem">
+                        <img src="./images/icon-6.png" alt="icon" class="info__pic">
+                        <p class="info__text">We will only switch you to energy companies that we trust and will treat you right</p>
+                    </div>
+                    <div class="info__elem">
+                        <img src="./images/icon-7.png" alt="icon" class="info__pic">
+                        <p class="info__text">We track the markets daily and know where the savings are.</p>
+                    </div>
                 </div>
-                <a href="#">SIGN UP NOW</a>
             </div>
-        </div>
-        <div>
-            <p>Effortless Validation for</p>
-            <p>Management</p>
-            <p>The Myspace page defines the individual, his or her characteristics,
-                 traits, personal choices and the overall personality of the person. </p>
-            <p>Accessory makers</p>
-            <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-            <p>Alterationists</p>
-            <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
-            <img src="./images/management-img.png" alt="text">
-        </div>
-        <div>
-            <p>Easier decision making for</p>
-            <p>Customer Support</p>
-            <p>The Myspace page defines the individual, his or her characteristics, 
-                traits, personal choices and the overall personality of the person. </p>
-            <img src="./images/icon-5.png" alt="icon">
-            <p>Never worry about overpaying for your energy again. </p>
-            <img src="./images/icon-6.png" alt="icon">
-            <p>We will only switch you to energy companies that we trust and will treat you right</p>
-            <img src="./images/icon-7.png" alt="icon">
-            <p>We track the markets daily and know where the savings are.</p>
-            <img src="./images/support-img.png" alt="laptop">
-        </div>
-        <div>
-            <p>Optimisation for</p>
-            <p>Collaborative</p>
-            <p>Few would argue that, despite the advancements of feminism over the past three decades, 
-                women still face a double standard when it comes to their behavior. </p>
-            <p>Accessory makers</p>
-            <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-            <p>Alterationists</p>
-            <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
-            <img src="./images/collaboration-img.png" alt="images">
-        </div>
-        <div>
-            <p>Quick & Easy Process</p>
-            <p>Do you require some help for your project: Conception workshop,
-                prototyping, marketing strategy, landing page, Ux/UI?</p>
-            <div>
-                <img src="./images/avatar-1.png" alt="photo">
-                <p>I can take care of your pitch</p>
+            <div class="info__item">
+                <div class="info__textbox">
+                    <p class="info__title">Optimisation for</p>
+                    <p class="info__name">Collaborative</p>
+                    <p class="info__text">Few would argue that, despite the advancements of feminism over the past three decades, 
+                        women still face a double standard when it comes to their behavior. </p>
+                    <p class="info__title info__title_bottom">Accessory makers</p>
+                    <p class="info__text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
+                    <p class="info__title info__title_bottom">Alterationists</p>
+                    <p class="info__text">If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                </div>
+                <img src="./images/collaboration-img.png" alt="images" class="info__image">
             </div>
-            <div>
-                <p>I can take care of your pitch</p>
-                <img src="./images/avatar-2.png" alt="photo">
-            </div>
-            <div>
-                <p>I can prototype your app</p>
-                <img src="./images/avatar-3.png" alt="photo">
-            </div>
-            <div>
-                <img src="./images/avatar-4.png" alt="photo">
-                <p>I can help marketing strategy</p>
-            </div>
-            <a href="#">Contact our expert</a>
-        </div>
-        <div>
-            <p>Contents Strategies</p>
-            <p>We focus on ergonomics and meeting you where you work. It's only a keystroke away. </p>
-            <div>
-                <img src="./images/image-1.png" alt="laptop">
-                <p>By Wahid Ari</p>
-                <hr>
-                <p>03 March 2019</p>
-                <a href="#">Increasing Prosperity With Positive Thinking</a>
-            </div>
-            <div>
-                <img src="./images/image-2.png" alt="window" >
-                <p>By Wahid Ari</p>
-                <hr>
-                <p>03 March 2019</p>
-                <a href="#">Motivation Is The First Step To Success</a>
-            </div>
-            <div>
-                <img src="./images/image-3.png" alt="skyscraper">
-                <p>By Wahid Ari</p>
-                <hr>
-                <p>03 March 2019</p>
-                <a href="#">Success Steps For Your Personal Or Business</a>
-            </div>
-            <img src="./images/pagination.png" alt="dots">
-        </div>
-        <div>
-            <p>Price Table</p>
-            <p>We offer competitive price</p>
-            <div>
-                <p>Free</p>
-                <p>Brief price description</p>
-                <p>0</p>
-                <p>$</p>
-                <p>Per / month</p>
-                <p>Only 2 Operators</p>
-                <p>Notifications</p>
-                <p>Landing Pages</p>
-                <a href="#">Order Now</a>
-            </div>
-            <div>
-                <p>Standard</p>
-                <p>Brief price description</p>
-                <p>5</p>
-                <p>$</p>
-                <p>Per / month</p>
-                <p>5+ Operators</p>
-                <p>Notifications</p>
-                <p>Landing Pages</p>
-                <a href="#">Order Now</a>
-            </div>
-            <div>
-                <p>Premium</p>
-                <p>Brief price description</p>
-                <p>10</p>
-                <p>$</p>
-                <p>Per / month</p>
-                <p>10+ Operators</p>
-                <p>Notifications</p>
-                <p>Landing Pages</p>
-                <a href="#">Order Now</a>
-            </div>
-        </div>
-        <div>
-            <p>What Clients Say</p>
-            <p>Problems trying to resolve the conflict between 
-                the two major realms of Classical physics: Newtonian mechanics </p>
-            <div>
-                <img src="./images/stars.png" alt="stars">
-                <p>Product helps you see how many 
-                    more days you need to work to 
-                    reach your financial goal.</p>
-                <img src="./images/ellipse-1.png" alt="photo">
-                <p>Wahid Ari</p>
-                <p>Designer</p>
-            </div>
-            <div>
-                <img src="./images/stars.png" alt="stars">
-                <p>Product helps you see how many 
-                    more days you need to work to 
-                    reach your financial goal.</p>
-                <img src="./images/ellipse-2.png" alt="photo">
-                <p>Wahid Ari</p>
-                <p>Designer</p>
-            </div>
-            <div>
-                <img src="./images/stars.png" alt="stars">
-                <p>Product helps you see how many 
-                    more days you need to work to 
-                    reach your financial goal.</p>
-                <img src="./images/ellipse-3.png" alt="photo">
-                <p>Wahid Ari</p>
-                <p>Designer</p>
-            </div>
-        </div>
-        <div>
-            <p>Join 100 Compannies who boost their business with Product</p>
-            <a href="#">Get This</a>
-            <img src="./images/screen.png" alt="presentation">
         </div>
     </main>
 
-    <footer>
-        <div>
-            <img src="./images/logo.png" alt="logo">
-            <a href="#">Product</a>
-            <a href="#"><img src="./images/item-1.png" alt="instagram"></a>
-            <a href="#"><img src="./images/item-2.png" alt="facebook"></a>
-            <a href="#"><img src="./images/item-3.png" alt="twitter"></a>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-media">
+                <div class="social-media__logo">
+                    <img src="./images/logo.png" alt="logo" class="social-media__picture">
+                    <a href="#" class="social-media__name">Product</a>
+                </div>
+                <div class="social-media__links">
+                    <a href="#"><img src="./images/item-1.png" alt="instagram" class="social-media__icon"></a>
+                    <a href="#"><img src="./images/item-2.png" alt="facebook" class="social-media__icon"></a>
+                    <a href="#"><img src="./images/item-3.png" alt="twitter" class="social-media__icon"></a>
+                </div>
+            </div>
+            <div class="footer-resources">
+                <p class="footer__title">Resource</p>
+                <a href="#" class="footer__links">About Us</a>
+                <a href="#" class="footer__links">Blog</a>
+                <a href="#" class="footer__links">Contact</a>
+                <a href="#" class="footer__links">FAQ</a>
+            </div>
+            <div class="footer-info">
+                <p class="footer__title">Legal Stuff</p>
+                <a href="#" class="footer__links">Disclaimer</a>
+                <a href="#" class="footer__links">Financing</a>
+                <a href="#" class="footer__links">Privacy Policy</a>
+                <a href="#" class="footer__links">Terms of Service</a>
+            </div>
+            <div class="footer-form">
+                <p class="footer-form__text">knowing you're always on the best energy deal.</p>
+                <form action="#" method="get">
+                    <label for="phone"></label>
+                    <input type="tel" placeholder="Enter your phone number" pattern="\+?[0-9\s\-\(\)]+" required name="phone" class="footer__phone">
+                    <button type="submit" class="footer__submit">Sign up Now</button>
+                </form>
+            </div>
         </div>
-        <div>
-            <p>Resource</p>
-            <a href="#">About Us</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <a href="#">FAQ</a>
-        </div>
-        <div>
-            <p>Legal Stuff</p>
-            <a href="#">Disclaimer</a>
-            <a href="#">Financing</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-        </div>
-        <div>
-            <p>knowing you're always on the best energy deal.</p>
-            <form action="#" method="get" name="phone">
-                <input type="tel" value="Enter your phone number" required>
-            </form>>
-            <button type="submit">Sign up Now</button>
-        </div>
-        <p>Made With Love By Figmaland All Right Reserved </p>
+        <p class="footer__legend">Made With Love By Анна Куликова, Анна Шурыгина, Аделина Галеева</p>
     </footer>
 </body>
 
