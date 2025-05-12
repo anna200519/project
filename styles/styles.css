@@ -60,6 +60,14 @@
     text-decoration: none;
 }
 
+.header__item:hover {
+    text-decoration: underline;
+}
+
+.header__item:visited {
+    color: #963656;
+}
+
 .header__item_bold {
     font-weight: 700;
 }
@@ -84,6 +92,10 @@
     height: 20px;
 }
 
+.header__sign-in:hover {
+    background-color: #bce5ce;
+}
+
 .header__sign-up, .banner__link {
     background: #02897A;
     border-radius: 4px;
@@ -98,6 +110,10 @@
     text-align: center;
     padding: 8px 0;
     height: 20px;
+}
+
+.header__sign-up:hover, .banner__link:hover {
+    background-color: #22343D;
 }
 
 .header__dark {
@@ -116,7 +132,7 @@
 
 .banner__content {
     width: 465px;
-    margin: 123px 35px 1213px 0;
+    padding: 123px 35px 123px 0;
 }
 
 .banner__name {
@@ -167,9 +183,13 @@
     color: #02897A;
 }   
 
+.banner__video:hover, .banner__video:visited {
+    color: #963656;
+}
+
 .banner__image {
-    height: 555px;
-    width: 610px;
+    height: auto;
+    max-width: 610px;
 }
 
 /*------------------------------------*/
@@ -180,7 +200,7 @@
 }
 
 .icons__name {
-    width: 539px;
+    max-width: 539px;
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 32px;
@@ -298,8 +318,8 @@
 }
 
 .info__image {
-    width: 540px;
-    height: 500px;
+    max-width: 540px;
+    height: auto;
 }
 
 .info__elem {
@@ -395,6 +415,14 @@
     text-decoration: none;
 }
 
+.footer__links:hover {
+    text-decoration: underline;
+}
+
+.footer__links:visited {
+    color:#963656
+}
+
 .footer-form {
     width: 325px;
     height: 199px;
@@ -441,6 +469,14 @@
     border: none;
 }
 
+.footer__submit:disabled {
+    opacity: 0.5;
+}
+
+.footer__submit:hover {
+    background-color: #173a56;
+}
+
 .footer__legend {
     font-family: 'Poppins';
     font-size: 16px;
@@ -450,3 +486,55 @@
 }
 
 /*------------------------------------*/
+
+@media (max-width: 768px) {
+    .body {
+        margin: 0 25px;
+    }
+    .header__navigation {
+        display: none;
+    }
+
+    .header__sign-in{
+        margin-left: calc(100% - 474px);
+    }
+
+   .banner {
+    height: 1110px;
+    flex-direction: column;
+   }
+
+   .icons__item {
+    width: 150px;
+   }
+
+   .icons__title {
+    height: 50px;
+   }
+
+   .info {
+    height: 2600px;
+   }
+
+   .info__item {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+   }
+   
+   .info__item_mod {
+    height: 500px;
+   }
+
+   .info__image_mod {
+    display: none;
+   }
+
+   .footer-resources {
+    display: none;
+   }
+   
+   .footer-info {
+    display: none;
+   }
+}
