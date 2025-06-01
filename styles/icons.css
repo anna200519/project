@@ -1,0 +1,75 @@
+.icons {
+    margin: 90px 0;
+    height: 503px;
+}
+
+.icons__name, .swiper__name {
+    max-width: 539px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #22343D;
+    margin: 0 auto;
+}
+
+.icons__block {
+    margin-top: 50px;
+    height: 204px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons__background {
+    background-image: url("../images/background.png");
+    height: 350px;
+    background-position: top center;
+}
+
+.icons__item {
+    width: 255px;
+    height: 204px;
+}
+
+.icons__image {
+    height: 61px;
+    width: 54px;
+}
+
+.icons__title, .swiper__title {
+    margin-top: 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #22343D;
+    height: 50px;
+}
+
+.icons__text {
+    margin: 13px 0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+}
+
+.icons__link {
+    background: #02897A;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    width: 179px;
+    display: block;
+    margin: 60px auto 0 auto;
+    text-align: center;
+    padding: 15px 0;
+    height: 23px;
+}
+
+.icons__link:hover {
+    background-color: #173A56;
+}

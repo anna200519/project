@@ -1,131 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <title>Product</title>
+    <title>Мир Умников</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="./styles/normalize.css" rel="stylesheet">
     <link href="./styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="body">
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="content">
     <header class="header">
-        <img src="./images/logo.png" alt="logo" class="header__logo">
-        <h1 class="header__name"><a href="#" class="header__link">Product</a></h1>
+        <img src="./images/logo.png" alt="логотип" class="header__logo">
+        <h1 class="header__name"><a href="#" class="header__link">Мир Умников</a></h1>
         <nav class="header__navigation">
             <ul class="header__nav">
                 <li class="header__list">
-                    <a href="#" class="header__item header__item_bold">Product</a>
+                    <a href="#" class="header__item header__item_bold">Меню</a>
                 </li>
                 <li class="header__list">
-                    <a href="#" class="header__item">Pricing</a>
+                    <a href="#" class="header__item">Каталог</a>
                 </li>
                 <li class="header__list">
-                    <a href="#" class="header__item">Pricing</a>
-                </li>
-                <li class="header__list">
-                    <a href="#" class="header__item header__item_indent">Resources</a>
+                    <a href="#" class="header__item header__item_indent">Преподаватели</a>
                 </li>
             </ul>
         </nav>
-        <a href="#" class="header__sign-in">Sign In</a>
-        <a href="#" class="header__sign-up">Sign Up</a>
-        <a href="#" class="header__dark"><img src="./images/drk-mode-btn.png" alt="dark theme"></a>
+        <a href="#" class="header__sign-in">Регистрация</a>
+        <a href="#" class="header__sign-up">Вход</a>
     </header>
     <main class="main">
+        <a href="#top" id="back-to-top" class="back-to-top">▲</a>
         <div class="banner">
             <div class="banner__content">
-                <h2 class="banner__name">Work at the speed of thought</h2>
-                <p class="banner__text">Tools, tutorials, design and innovation experts, all in one place! The most 
-                                         intuitive way to imagine your next user experience.</p>
+                <h2 class="banner__name">Образовательная плактформа "Мир Умников"</h2>
+                <p class="banner__text">Добро пожаловать в "Мир Умников"- удивительное онлайн-пространство, где каждый
+                                        из вас сможет открыть для себя множество интересных знаний, развлекательных игр и увлекательных занятий.</p>
                 <div class="banner__info">
-                    <a href="#" class="banner__link banner__link_width">Get started</a>
+                    <a href="#" class="banner__link banner__link_width">Начать</a>
                     <div class="banner__button">
                         <img src="./images/triangle.png" alt="triangle" class="banner__play">
-                        <a href="#" class="banner__video">Watch the Video</a>
+                        <button class="banner__video openVideoBtn" type="button">Смотреть Видео</button>
+                        <dialog class="banner__open" id="myVideo">
+                            <div class="video__wrapper">
+                                <button class="closeVideoBtn banner__close" type="button">&#10006</button>
+                                <p class="video__text">Обучающая онлайн-игра</h2>
+                                <iframe class="video__frame" width="648" height="365" src="https://rutube.ru/play/embed/c42c5f3428058a0d3922d55e34a4070a"
+                                      allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe>
+  
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
-            <img src="./images/hero-img.png" alt="social network correspondence" class="banner__image">
+            <img src="./images/banner.png" alt="планета" class="banner__image">          
         </div>
         <div class="icons">
-            <p class="icons__name">Product  was Built Specifically for You</p>
+            <p class="icons__name">Примеры множества курсов</p>
             <div class="icons__background">
                 <div class="icons__block">
-                    <div class="icons__item">   
-                        <img src="./images/icon-1.png" alt="cursor" class="icons__image">
-                        <p class="icons__title">First click tests</p>
-                        <p class="icons__text">While most people enjoy casino gambling,</p>
+                    <!--<div class="icons__item">   
+                        <img src="./images/icon-1.png" alt="Микрофон" class="icons__image">
+                        <p class="icons__title">Заголовок 1</p>
+                        <p class="icons__text">Научим ребенка говорить красиво</p>
                     </div>
                     <div class="icons__item">
-                        <img src="./images/icon-2.png" alt="wave" class="icons__image">
-                        <p class="icons__title">Design surveys</p>
-                        <p class="icons__text">Sports betting, lottery and bingo playing for the fun</p>
+                        <img src="./images/icon-2.png" alt="Математика" class="icons__image">
+                        <p class="icons__title">Заголовок 2</p>
+                        <p class="icons__text">Считаем быстро и просто</p>
                     </div>
                     <div class="icons__item">
-                        <img src="./images/icon-3.png" alt="heart" class="icons__image">
-                        <p class="icons__title">Preference tests</p>
-                        <p class="icons__text">The Myspace page defines the individual.</p>
+                        <img src="./images/icon-3.png" alt="Книга" class="icons__image">
+                        <p class="icons__title">Заголовок 3</p>
+                        <p class="icons__text">Знать о мире всё - легко</p>
                     </div>
                     <div class="icons__item">
-                        <img src="./images/icon-4.png" alt="hourglass" class="icons__image">
-                        <p class="icons__title">Five second tests</p>
-                        <p class="icons__text">Personal choices and the overall personality of the person. </p>
-                    </div>
+                        <img src="./images/icon-4.png" alt="Мольберт" class="icons__image">
+                        <p class="icons__title">Заголовок 4</p>
+                        <p class="icons__text">Воплотим мпечту в реальность</p>
+                    </div> -->
                 </div>
-            <a href="#" class="icons__link">SIGN UP NOW</a>
+                <a href="#" class="icons__link">Записаться</a>
             </div>
         </div>
         <div class="info">
             <div class="info__item">
                 <div class="info__textbox">
-                    <p class="info__title">Effortless Validation for</p>
-                    <p class="info__name">Management</p>
-                    <p class="info__text">The Myspace page defines the individual, his or her characteristics,
-                        traits, personal choices and the overall personality of the person. </p>
-                    <p class="info__title info__title_bottom">Accessory makers</p>
-                    <p class="info__text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-                    <p class="info__title info__title_bottom">Alterationists</p>
-                    <p class="info__text">If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                    <p class="info__name">Помощник в работе педагога</p>
+                    <p class="info__text">На нашем сайте представлен полный выбор готовых курсов и заданий, 
+                                            которые помогут детям в процессе обучения</p>
+                    <p class="info__title info__title_bottom">Проверка знаний</p>
+                    <p class="info__text">Тестовые упражнения, статистика успеваемости и автопроверка заданий</p>
+                    <p class="info__title info__title_bottom">Вебинары</p>
+                    <p class="info__text">Бесплатные вебинары и курсы для педагога</p>
                 </div>
-                <img src="./images/management-img.png" alt="text" class="info__image">
+                <img src="./images/info-1.png" alt="Педагогам" class="info__image">
             </div>
             <div class="info__item info__item_mod">
-                <img src="./images/support-img.png" alt="laptop" class="info__image info__image_mod">
+                <img src="./images/info-2.png" alt="Преимуществ" class="info__image info__image_mod">
                 <div class="info__textbox">
-                    <p class="info__title">Easier decision making for</p>
-                    <p class="info__name">Customer Support</p>
-                    <p class="info__text">The Myspace page defines the individual, his or her characteristics, 
-                        traits, personal choices and the overall personality of the person. </p>
+                    <p class="info__name">Преимущества нашей платформы</p>
+                    <p class="info__text">Работа родителей, педагогов и нашей команды помогут ребенку в успешном освоении дошкольной программы</p>
                     <div class="info__elem">
                         <img src="./images/icon-5.png" alt="icon" class="info__pic">
-                        <p class="info__text">Never worry about overpaying for your energy again. </p>
+                        <p class="info__text">Доступаность: дети могут учиться в любое время и в любом месте</p>
                     </div>
                     <div class="info__elem">
                         <img src="./images/icon-6.png" alt="icon" class="info__pic">
-                        <p class="info__text">We will only switch you to energy companies that we trust and will treat you right</p>
+                        <p class="info__text">Разнообразие контента: платформа предоставляет широкий спектр обучающих материалов</p>
                     </div>
                     <div class="info__elem">
                         <img src="./images/icon-7.png" alt="icon" class="info__pic">
-                        <p class="info__text">We track the markets daily and know where the savings are.</p>
+                        <p class="info__text">Индивидуальный подход: наша платформа адаптирует материалы под уровень знаний и интересы ребенка</p>
                     </div>
                 </div>
             </div>
             <div class="info__item">
                 <div class="info__textbox">
-                    <p class="info__title">Optimisation for</p>
-                    <p class="info__name">Collaborative</p>
-                    <p class="info__text">Few would argue that, despite the advancements of feminism over the past three decades, 
-                        women still face a double standard when it comes to their behavior. </p>
-                    <p class="info__title info__title_bottom">Accessory makers</p>
-                    <p class="info__text">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
-                    <p class="info__title info__title_bottom">Alterationists</p>
-                    <p class="info__text">If you are looking for a new way to promote your business that won’t cost you more money, </p>
+                    <p class="info__name">Родителям</p>
+                    <p class="info__text">Для помощи родителям на нашей платформе собрано множество статей, советов и рекомендаций</p>
+                    <p class="info__title info__title_bottom">Помощь педагога</p>
+                    <p class="info__text">Как преодолеть трудности и страхи во время обучения</p>
+                    <p class="info__title info__title_bottom">Консультации</p>
+                    <p class="info__text">Нащи педагоги могут помочь вам и вашим детям в любое время</p>
                 </div>
-                <img src="./images/collaboration-img.png" alt="images" class="info__image">
+                <img src="./images/info-3.png" alt="Родителям" class="info__image">
             </div>
         </div>
+        <div class="swiper-block">
+            <div class="swiper">
+                <p class="swiper__name">Время с пользой: игры и занятия</p>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/slider-1.png" alt="Забавные эксперименты" class="swiper__image">
+                        <p class="swiper__title">Забавные эксперименты: маленькие ученые</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider-2.png" alt="Цветные шары" class="swiper__image">
+                        <p class="swiper__title">Цветные шары</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider-3.png" alt="Веселый оркестр" class="swiper__image">
+                        <p class="swiper__title">Веселый оркестр</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider-4.png" alt="Веселая музыка и движения" class="swiper__image">
+                        <p class="swiper__title">Веселая музыка и движения</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider-5.png" alt="Собери картину" class="swiper__image">
+                        <p class="swiper__title">Собери картину</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider-6.png" alt="Сказочный патруль" class="swiper__image">
+                        <p class="swiper__title">Сказочный патруль</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider-7.png" alt="Мультфильмы" class="swiper__image">
+                        <p class="swiper__title">Мультфильмы о дружбе и творчестве</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider-8.png" alt="Детская йога" class="swiper__image">
+                        <p class="swiper__title">Детская йога: веселые движения для малышей</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/slider-9.png" alt="Пластилиновая магия" class="swiper__image">
+                        <p class="swiper__title">Пластилиновая магия: делаем зверюшек</p>
+                    </div>
+                </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+        </div>  
     </main>
 
     <footer class="footer">
@@ -133,39 +186,42 @@
             <div class="social-media">
                 <div class="social-media__logo">
                     <img src="./images/logo.png" alt="logo" class="social-media__picture">
-                    <a href="#" class="social-media__name">Product</a>
+                    <a href="#" class="social-media__name">Мир Умников</a>
                 </div>
                 <div class="social-media__links">
-                    <a href="#"><img src="./images/item-1.png" alt="instagram" class="social-media__icon"></a>
-                    <a href="#"><img src="./images/item-2.png" alt="facebook" class="social-media__icon"></a>
-                    <a href="#"><img src="./images/item-3.png" alt="twitter" class="social-media__icon"></a>
+                    <a href="https://t.me/A_n_u_t_k_a_191"><img src="./images/social-1.png" alt="Анна Куликова" class="social-media__icon"></a>
+                    <a href="https://t.me/moonlght29"><img src="./images/social-2.png" alt="Анна Шурыгина" class="social-media__icon"></a>
+                    <a href="https://t.me/mouadelin"><img src="./images/social-3.png" alt="Аделина Галеева" class="social-media__icon"></a>
                 </div>
             </div>
             <div class="footer-resources">
-                <p class="footer__title">Resource</p>
-                <a href="#" class="footer__links">About Us</a>
-                <a href="#" class="footer__links">Blog</a>
-                <a href="#" class="footer__links">Contact</a>
-                <a href="#" class="footer__links">FAQ</a>
+                <p class="footer__title">О Нас</p>
+                <a href="#" class="footer__links">Контакты</a>
+                <a href="#" class="footer__links">Новости</a>
+                <a href="#" class="footer__links">Вакансии</a>
+                <a href="#" class="footer__links">Отзывы</a>
             </div>
             <div class="footer-info">
-                <p class="footer__title">Legal Stuff</p>
-                <a href="#" class="footer__links">Disclaimer</a>
-                <a href="#" class="footer__links">Financing</a>
-                <a href="#" class="footer__links">Privacy Policy</a>
-                <a href="#" class="footer__links">Terms of Service</a>
+                <p class="footer__title">Другое</p>
+                <a href="#" class="footer__links">Тарифы и цены</a>
+                <a href="#" class="footer__links">Скидки</a>
+                <a href="#" class="footer__links">Вопрос-ответ</a>
+                <a href="#" class="footer__links">Наши партнеры</a>
             </div>
             <div class="footer-form">
-                <p class="footer-form__text">knowing you're always on the best energy deal.</p>
-                <form action="#" method="get">
+                <p class="footer-form__text">Обратная связь</p>
+                <form action="#" method="get" id="phone-form">
                     <label for="phone"></label>
-                    <input type="tel" placeholder="Enter your phone number" pattern="\+?[0-9\s\-\(\)]+" required name="phone" class="footer__phone">
-                    <button type="submit" class="footer__submit">Sign up Now</button>
+                    <input type="tel" placeholder="Введите номер телефона" pattern="\+?[0-9\s\-\(\)]+" required id="phone" class="footer__phone">
+                    <button type="submit" class="footer__submit" id="submit">Связаться</button>
                 </form>
             </div>
         </div>
-        <p class="footer__legend">Made With Love By Анна Куликова, Анна Шурыгина, Аделина Галеева</p>
+        <p class="footer__legend">Спасибо, что выбираете нас: Анна Куликова, Анна Шурыгина, Аделина Галеева</p>
     </footer>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

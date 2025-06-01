@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+    .body {
+        margin: 0 25px;
+    }
+    .header__navigation {
+        display: none;
+    }
+
+    .header__sign-in{
+        margin-left: calc(100% - 474px);
+    }
+
+   .banner {
+    height: 1110px;
+    flex-direction: column;
+   }
+
+   .icons__item {
+    width: 150px;
+   }
+
+   .icons__title {
+    height: 75px;
+   }
+
+   .info {
+    height: 2600px;
+   }
+
+   .info__item {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+   }
+   
+   .info__item_mod {
+    height: 500px;
+   }
+
+   .info__image_mod {
+    display: none;
+   }
+
+   .footer-resources {
+    display: none;
+   }
+   
+   .footer-info {
+    display: none;
+   }
+}

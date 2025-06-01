@@ -1,0 +1,129 @@
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+.header--scroll{
+    background-color: hsla(180, 81%, 79%, 0.918);
+}
+
+.header__logo {
+    height: 40px;
+    width: 40px;
+    margin: 22px 0;
+}
+
+.header__name {
+    padding: 0 22px;
+    height: 28px;
+    width: 150px;
+}
+
+.header__link {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: #173a56;
+    line-height: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header__list {
+    list-style: none;
+}
+
+.header__navigation {
+    height: 28px;
+    width: 379px;
+    margin: 32px 0 32px 193px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__item {
+    padding: 26px 15px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #22343d;
+    line-height: 28px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.header__item:hover {
+    text-decoration: underline;
+}
+
+.header__item:visited {
+    color: #963656;
+}
+
+.header__item_bold {
+    font-weight: 700;
+}
+
+.header__item_indent {
+    padding: 26px 15px 26px 35px;
+}
+
+.header__sign-in {
+    border-radius: 4px;
+    border: #bcd0e5 solid 1px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    width: 102px;
+    display: block;
+    margin: 26px 8px;
+    color: #173a56;
+    text-align: center;
+    padding: 8px 0;
+    height: 20px;
+}
+
+.header__sign-in:hover {
+    background-color: #bce5ce;
+}
+
+.header__sign-up, .banner__link {
+    background: #02897A;
+    border-radius: 4px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    width: 102px;
+    display: block;
+    margin: 26px 8px;
+    text-align: center;
+    padding: 8px 0;
+    height: 20px;
+}
+
+.header__sign-up:hover, .banner__link:hover {
+    background-color: #22343D;
+}
+
+.header__dark {
+    height: 32px;
+    width: 32px;
+    margin: 30px 8px;
+}
+
+.button-mod {
+    background-image: url(../images/heart.png);
+    color: transparent;
+    background-color: transparent;
+    background-size: 31px;
+    background-repeat: repeat-x;
+    background-position: center center;
+    border: none;
+}
