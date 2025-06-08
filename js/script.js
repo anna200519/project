@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
    const iconsContainer = document.querySelector('.icons');
 
-    if (iconsContainer) {
+    /*if (iconsContainer) {
 
         const dataTitleIcons = ['Развитие речи', 'Занимательная математика', 'Развивающая программа от 5 до 7 лет', 'Я - Художник'];
 
@@ -128,10 +128,37 @@ document.addEventListener("DOMContentLoaded", () => {
             item.textContent = dataTitleIcons[index];
         });
 
-    }
+    }*/
 
     if (iconsContainer) {
         const iconsList = iconsContainer.querySelector('.icons__block');
+
+       /* const iconsData = {
+        icon1: {
+            iconUrl: './images/icon-1.png',
+            iconAlt: 'Микрофон',
+            title: 'Развитие речи',
+            text: 'Научим ребенка говорить красиво'
+        },
+        icon2: {
+            iconUrl: './images/icon-2.png',
+            iconAlt: 'Математика',
+            title: 'Занимательная математика',
+            text: 'Считаем быстро и просто'
+        },
+        icon3: {
+            iconUrl: './images/icon-3.png',
+            iconAlt: 'Книга',
+            title: 'Развивающая программа от 5 до 7 лет',
+            text: 'Знать о мире всё - легко'
+        },
+         icon4: {
+            iconUrl: './images/icon-4.png',
+            iconAlt: 'Мольберт',
+            title: 'Я - Художник',
+            text: 'Воплотим мпечту в реальность'
+        }
+  }*/
 
         const apiUrl = 'data.json';
 
@@ -148,6 +175,14 @@ document.addEventListener("DOMContentLoaded", () => {
             return iconBlock;
         }
 
+            /*for (const iconKey in iconsData) {
+            const icon = iconsData[iconKey];
+            const iconElement = createBlock(icon.iconUrl, icon.iconAlt,
+                                icon.title, icon.text);
+            iconsList.insertAdjacentHTML('beforeend', iconElement);
+        }*/
+    
+
         fetch(apiUrl)
             .then(response => response.json())
             .then(data => {
@@ -161,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(error => {
                 console.error('Ошибка при загрузке данных:', error);
-            });
+            }); 
     }
     
     const preloader = document.querySelector('.preloader');
